@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_PRACTICE_CS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1> Favorite Fastfood Restaurant </h1>
+<br>
+        <input type="text" placeholder="Jollibee, KFC, Mcdo, Popeyes" id="ffr">
+<br>
+        <button type="button" onclick="show()"> Show me </button>
+<br>
+        <h1 id="output">Your favorite fastfood restaurant is...</h1>
+
+    </div>
+
+<script>
+
+function show() {
+    var ffr = document.getElementById("ffr").value;
+    
+    if(ffr == "Jollibee")
+        {document.getElementById("output").innerHTML = "Bida ang saya!";}
+    else if(ffr == "KFC")
+        {document.getElementById("output").innerHTML = "It's Finger Lickin' Good";}
+    else if(ffr == "Mcdo")
+        {document.getElementById("output").innerHTML = "I'm Lovin' It";}
+    else if(ffr == "Popeyes")
+        {document.getElementById("output").innerHTML = "Love That Chicken";}
+    else 
+        {document.getElementById("output").inerHTML = "Invalid Output";}
+}
+
+</script>
+</body>
+</html>
